@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <title>Quiz App</title>
+</head>
+
+<body class="flex-hr-center">
+  <!-- MAIN WRAPPER -->
+  <div class="wrapper">
+    <!-- WRAPPER HEAD -->
+    <div class="wrapper-head flex-vr-center">
+      <!-- USER PROFILE HERE -->
+      <div class="user-profile flex">
+        <i class="fa fa-circle-user"></i>
+      </div>
+      <!-- USER NAME HERE -->
+      <div class="user-name">Hi,</div>
+      <div class="top-score">Top score <br> <span>0</span></div>
+    </div>
+
+    <!-- QUIZ CONTAINER -->
+    <div class="quiz-container">
+      <!-- QUIZ HEAD -->
+      <div class="quiz-head">
+        <!-- QUIZ SCORE -->
+        <div class="quiz-score flex">
+          <span id="asked-count"></span>&nbsp;/&nbsp;<span id="total-question"></span>
+        </div>
+      </div>
+
+      <!-- QUIZ BODY -->
+      <div class="quiz-body">
+        <h2 class="quiz-question" id="question">
+          <!-- QUIZ QUESTION HERE -->
+        </h2>
+        <ul class="quiz-options">
+          <!-- QUIZ OPTIONS HERE -->
+        </ul>
+        <div id="result">
+          <!-- QUIZ RESULT HERE -->
+        </div>
+      </div>
+
+      <!-- QUIZ FOOT -->
+      <div class="quiz-foot flex">
+        <button type="button" id="reload"> <i class="fa fa-refresh"></i> </button>
+        <button type="button" id="check-answer">Check Answer</button>
+        <button type="button" id="play-again"> <i class="fa fa-repeat"></i> Play Again</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
